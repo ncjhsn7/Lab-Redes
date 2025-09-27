@@ -1,0 +1,8 @@
+{
+  "command": "put",
+  "file": ".\\teste.txt",
+  "bytesSent": 52,
+  "bytesReceived": 93,
+  "durationSec": 0.015,
+  "throughputBytesPerSec": 3467
+}
