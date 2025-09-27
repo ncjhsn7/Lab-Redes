@@ -23,3 +23,21 @@ node client.js --host 127.0.0.1 --port 8080 quit
 ```
 ls server_storage
 ``` 
+
+# Arquitetura
+protocol é a base compartilhada → define o “idioma” da aplicação. //
+server e client dependem de protocol para entender as mensagens.
+Ambos também dependem de módulos nativos (net, fs, path).
+Não há classes personalizadas, só objetos (upload, state) e funções.
+```
+            Node
+             │
+       ┌─────┴─────┐
+       │           │
+     server      client
+       │           │
+       └─────┬─────┘
+             │
+         protocol
+
+```

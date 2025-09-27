@@ -1,3 +1,4 @@
+// como o tcp só entrega bytes, foi preciso colocar na linguagem de bytes já que palavras não são reconhecidas.
 const OP = {
     LIST: 0x01,
     PUT_META: 0x02,
