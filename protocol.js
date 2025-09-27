@@ -1,6 +1,3 @@
-// protocol.js
-// Utilitários de framing (1 byte op + 4 bytes len + payload) e helpers.
-
 const OP = {
     LIST: 0x01,
     PUT_META: 0x02,
@@ -25,7 +22,6 @@ function encodeFrame(op, payload) {
 }
 
 function decodeFrames(buffer) {
-    // Retorna { frames: Array<{op, payload:Buffer}>, rest:Buffer }
     const frames = [];
     let offset = 0;
     while (buffer.length - offset >= 5) {

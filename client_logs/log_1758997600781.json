@@ -1,0 +1,8 @@
+{
+  "command": "list",
+  "file": "--host",
+  "bytesSent": 5,
+  "bytesReceived": 28,
+  "durationSec": 0.01,
+  "throughputBytesPerSec": 500
+}
